@@ -10,24 +10,23 @@ namespace Tic_Toc_Toe_Game
 	class Program
 	{
 
-		static char[] board = new char[10];
-		public static void Main(String[] args)
+
+		static void Main(string[] args)
 		{
-			Console.WriteLine("welcome to Tic Tac Toi GAME");
-			Board();                            //calling the method board in main method	
+			// Main method
+			Console.WriteLine("Welcome to The tic tac toe Game");
+			TicTacToeGame game1 = new TicTacToeGame();
+			game1.createGame();
+
+			Console.WriteLine("Game Begins.\nPlease select your letter");
+			game1.selectLetter();
+
+
+
+
+
+
+
 		}
-		public static void Board()
-		{
-			// giving each array index value as empty initially
-			for (int i = 1; i < 10; i++)
-			{
-				board[i] = ' ';	
-
-				Console.ReadLine();
-
-
-
-			}
-		}	
 	}
 }
